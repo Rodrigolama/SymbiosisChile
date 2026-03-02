@@ -44,7 +44,7 @@ export async function POST(request: Request) {
         Authorization: `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "Symbiosis Chile <noreply@symbiosischile.com>",
+        from: "Symbiosis Chile <onboarding@resend.dev>",
         to: recipients,
         subject: `[Symbiosis Chile] Nueva consulta: ${service}`,
         reply_to: email,
