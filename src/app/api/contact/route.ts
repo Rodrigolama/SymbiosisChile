@@ -33,8 +33,7 @@ export async function POST(request: Request) {
     }
 
     const recipients = [
-      "monserrat.tome@symbiosischile.com",
-      "rodrigolamatorress@gmail.com",
+      "rodrigolamatorres@gmail.com",
     ];
 
     const res = await fetch("https://api.resend.com/emails", {
