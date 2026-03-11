@@ -423,8 +423,18 @@ h6{font-size:var(--fs-md)}
   display:flex;align-items:center;justify-content:center;
   font-size:var(--fs-xs,0.75rem);color:var(--c-text-light);opacity:0.6;
 }
+.client-logo{
+  min-width:140px;height:48px;flex-shrink:0;
+  object-fit:contain;
+  filter:grayscale(100%) brightness(0.7);
+  transition:filter var(--transition);
+}
+.client-logo:hover{
+  filter:grayscale(0%) brightness(1);
+}
 @media(max-width:640px){
   .client-logo--placeholder{min-width:100px;height:36px}
+  .client-logo{min-width:100px;height:36px}
 }
 
 /* ---------- CONTACT FORM ---------- */

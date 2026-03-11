@@ -187,18 +187,20 @@ export default function Home() {
           <div className="container">
             <span className="section-label">Confían en Nosotros</span>
             <div className="clients-grid">
-              <div className="client-logo--placeholder">Logo 1</div>
-              <div className="client-logo--placeholder">Logo 2</div>
-              <div className="client-logo--placeholder">Logo 3</div>
-              <div className="client-logo--placeholder">Logo 4</div>
-              <div className="client-logo--placeholder">Logo 5</div>
-              <div className="client-logo--placeholder">Logo 6</div>
-              <div className="client-logo--placeholder">Logo 1</div>
-              <div className="client-logo--placeholder">Logo 2</div>
-              <div className="client-logo--placeholder">Logo 3</div>
-              <div className="client-logo--placeholder">Logo 4</div>
-              <div className="client-logo--placeholder">Logo 5</div>
-              <div className="client-logo--placeholder">Logo 6</div>
+              <img src="/img/client-logo.png" alt="Cliente 1" className="client-logo" />
+              <img src="/img/client-logo (1).png" alt="Cliente 2" className="client-logo" />
+              <img src="/img/client-logo (2).png" alt="Cliente 3" className="client-logo" />
+              <img src="/img/client-logo (3).png" alt="Cliente 4" className="client-logo" />
+              <img src="/img/client-logo (4).png" alt="Cliente 5" className="client-logo" />
+              <img src="/img/client-logo (5).png" alt="Cliente 6" className="client-logo" />
+              <img src="/img/client-logo (6).png" alt="Cliente 7" className="client-logo" />
+              <img src="/img/client-logo.png" alt="Cliente 1" className="client-logo" />
+              <img src="/img/client-logo (1).png" alt="Cliente 2" className="client-logo" />
+              <img src="/img/client-logo (2).png" alt="Cliente 3" className="client-logo" />
+              <img src="/img/client-logo (3).png" alt="Cliente 4" className="client-logo" />
+              <img src="/img/client-logo (4).png" alt="Cliente 5" className="client-logo" />
+              <img src="/img/client-logo (5).png" alt="Cliente 6" className="client-logo" />
+              <img src="/img/client-logo (6).png" alt="Cliente 7" className="client-logo" />
             </div>
           </div>
         </section>
