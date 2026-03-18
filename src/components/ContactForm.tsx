@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
+import { useGclid } from "@/hooks/useGclid";
 
 export default function ContactForm() {
   const [step, setStep] = useState(1);
@@ -12,6 +13,7 @@ export default function ContactForm() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const progressRef = useRef<HTMLDivElement>(null);
+  const { getGclid } = useGclid();
 
   function goToStep(n: number | "success") {
     if (n === "success") {
@@ -44,7 +46,7 @@ export default function ContactForm() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ service, challenge, name, email }),
+        body: JSON.stringify({ service, challenge, name, email, gclid: getGclid() }),
       });
       const data = await res.json();
       setLoading(false);

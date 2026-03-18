@@ -12,6 +12,32 @@ export const metadata: Metadata = {
   title: "Symbiosis Chile — Consultoría e Investigación Ambiental",
   description:
     "Especialistas en investigación y gestión ambiental de Hongos, Líquenes y Briófitas. Cumplimiento SEIA garantizado.",
+  keywords: [
+    "consultoría ambiental",
+    "hongos chile",
+    "líquenes",
+    "briófitas",
+    "SEIA",
+    "evaluación impacto ambiental",
+    "micología",
+    "sostenibilidad",
+    "economía circular",
+    "ley REP"
+  ],
+  authors: [{ name: "Monserrat Tomé" }],
+  openGraph: {
+    title: "Symbiosis Chile — Consultoría e Investigación Ambiental",
+    description: "Especialistas en investigación y gestión ambiental de Hongos, Líquenes y Briófitas. Cumplimiento SEIA garantizado.",
+    url: "https://symbiosischile.com",
+    siteName: "Symbiosis Chile",
+    locale: "es_CL",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Symbiosis Chile — Consultoría Ambiental",
+    description: "Especialistas en investigación y gestión ambiental de Hongos, Líquenes y Briófitas",
+  },
   icons: {
     icon: "/icon.png",
     shortcut: "/favicon.png",
