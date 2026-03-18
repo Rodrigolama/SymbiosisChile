@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   title: "Symbiosis Chile — Consultoría e Investigación Ambiental",
   description:
     "Especialistas en investigación y gestión ambiental de Hongos, Líquenes y Briófitas. Cumplimiento SEIA garantizado.",
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/favicon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({
