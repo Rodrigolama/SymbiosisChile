@@ -1,3 +1,5 @@
+"use client";
+
 export default function Header() {
   function handleSmoothScroll(
     e: React.MouseEvent<HTMLAnchorElement>,
