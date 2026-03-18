@@ -1,31 +1,4 @@
-"use client";
-
-import { useState, useEffect, useRef } from "react";
-
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-  const navRef = useRef<HTMLUListElement>(null);
-  const toggleRef = useRef<HTMLButtonElement>(null);
-
-  useEffect(() => {
-    function handleOutsideClick(e: MouseEvent) {
-      if (
-        navRef.current &&
-        toggleRef.current &&
-        !navRef.current.contains(e.target as Node) &&
-        !toggleRef.current.contains(e.target as Node)
-      ) {
-        setIsOpen(false);
-      }
-    }
-    document.addEventListener("click", handleOutsideClick);
-    return () => document.removeEventListener("click", handleOutsideClick);
-  }, []);
-
-  function handleLinkClick() {
-    setIsOpen(false);
-  }
-
   function handleSmoothScroll(
     e: React.MouseEvent<HTMLAnchorElement>,
     href: string
@@ -36,7 +9,6 @@ export default function Header() {
       if (target) {
         target.scrollIntoView({ behavior: "smooth", block: "start" });
       }
-      setIsOpen(false);
     }
   }
 
@@ -67,22 +39,9 @@ export default function Header() {
             Symbiosis.
           </a>
 
-          <button
-            ref={toggleRef}
-            className="nav-toggle"
-            aria-label="Toggle navigation"
-            aria-expanded={isOpen}
-            aria-controls="primary-nav"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-            </svg>
-          </button>
-
           <nav id="primary-nav" aria-label="Primary navigation">
-            <ul ref={navRef} className={`nav-list${isOpen ? " is-open" : ""}`}>
-              <li><a href="/" aria-current="page" onClick={handleLinkClick}>Inicio</a></li>
+            <ul className="nav-list">
+              <li><a href="/" aria-current="page">Inicio</a></li>
               <li><a href="#compromiso" onClick={(e) => handleSmoothScroll(e, "#compromiso")}>Nuestro Compromiso</a></li>
               <li><a href="#servicios" onClick={(e) => handleSmoothScroll(e, "#servicios")}>Consultoría Ambiental</a></li>
               <li><a href="#micorrizas" onClick={(e) => handleSmoothScroll(e, "#micorrizas")}>Análisis de Micorrizas</a></li>
