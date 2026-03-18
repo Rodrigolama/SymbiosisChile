@@ -49,6 +49,15 @@ export default function ContactForm() {
       const data = await res.json();
       setLoading(false);
       if (data.success) {
+        // Push to Google Tag Manager Data Layer
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'generate_lead',
+          form_id: 'contacto_principal',
+          conversion_value: 50,
+          service_selected: service,
+          user_email: email
+        });
         goToStep("success");
       } else {
         setError(data.message || "Error al enviar. Intenta de nuevo.");
