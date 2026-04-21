@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -66,13 +67,14 @@ export default function RootLayout({
           }}
         />
         {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2R5PYZSMDB" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18008420048"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
+              gtag('config', 'AW-18008420048');
               gtag('config', 'G-2R5PYZSMDB');
             `,
           }}
@@ -89,6 +91,7 @@ export default function RootLayout({
           }}
         />
         {children}
+        <WhatsAppButton />
       </body>
     </html>
   );

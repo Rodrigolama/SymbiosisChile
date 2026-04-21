@@ -19,9 +19,7 @@ export default function Footer() {
             <h5>Contacto</h5>
             <ul>
               <li>Caspana #710, Valdivia</li>
-              <li><a href="tel:+56962070062">+569 620 700 62</a></li>
               <li><a href="mailto:monserrat.tome@symbiosischile.com">monserrat.tome@symbiosischile.com</a></li>
-              <li><a href="https://wa.me/56962070062?text=Hola+Symbiosis,+necesito+información+sobre+servicios+ambientales" target="_blank" rel="noopener noreferrer" className="whatsapp-link">+569 620 700 62 (WhatsApp)</a></li>
               <li><a href="https://www.symbiosischile.com/" target="_blank" rel="noopener noreferrer">symbiosischile.com</a></li>
             </ul>
           </div>

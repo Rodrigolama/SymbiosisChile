@@ -60,6 +60,14 @@ export default function ContactForm() {
           service_selected: service,
           user_email: email
         });
+        // Google Ads conversion tracking
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'conversion', {
+            'send_to': 'AW-18008420048/bUcgCJquzYYcENDdiotD',
+            'value': 1.0,
+            'currency': 'CLP'
+          });
+        }
         goToStep("success");
       } else {
         setError(data.message || "Error al enviar. Intenta de nuevo.");
