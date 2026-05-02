@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <div className="site-logo">Symbiosis<span style={{ color: "var(--c-accent)" }}>.</span></div>
-            <p>Especialistas en investigación y gestión ambiental de Hongos, Líquenes y Briófitas. Ciencia rigurosa al servicio de la sostenibilidad.</p>
+            <p>Donde el rigor científico protege a los organismos más específicos. Especialistas en Hongos, Líquenes y Briófitas.</p>
           </div>
           <div className="footer-col">
             <h5>Servicios</h5>
