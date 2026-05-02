@@ -346,6 +346,9 @@ h6{font-size:var(--fs-md)}
   display:flex;flex-direction:column;
 }
 .how-section .pas-card p{flex:1}
+/* Centred content inside how-section cards */
+.how-section .pas-card{text-align:center}
+.how-section .pas-card .card-icon{margin-inline:auto}
 
 /* ---------- SERVICES BENTO GRID ---------- */
 .services-section{
