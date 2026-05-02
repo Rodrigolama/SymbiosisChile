@@ -1,10 +1,20 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="site-footer" role="contentinfo">
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <div className="site-logo">Symbiosis<span style={{ color: "var(--c-accent)" }}>.</span></div>
+            <div className="site-logo" style={{ marginBottom: "1rem" }}>
+              <Image
+                src="/img/logo.png"
+                alt="Symbiosis Chile Logo"
+                width={150}
+                height={40}
+                style={{ height: "auto", width: "auto", maxHeight: "40px", filter: "brightness(0) invert(1)" }}
+              />
+            </div>
             <p>Donde el rigor científico protege a los organismos más específicos. Especialistas en Hongos, Líquenes y Briófitas.</p>
           </div>
           <div className="footer-col">

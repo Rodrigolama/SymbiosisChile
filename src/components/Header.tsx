@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 export default function Header() {
   function handleSmoothScroll(
@@ -38,7 +39,14 @@ export default function Header() {
       <header className="site-header" role="banner">
         <div className="container">
           <a href="/" className="site-logo" aria-label="Symbiosis Chile">
-            Symbiosis.
+            <Image
+              src="/img/logo.png"
+              alt="Symbiosis Chile Logo"
+              width={180}
+              height={50}
+              priority
+              style={{ height: "auto", width: "auto", maxHeight: "45px" }}
+            />
           </a>
 
           <nav id="primary-nav" aria-label="Primary navigation">

@@ -47,7 +47,7 @@ export default function Home() {
               <FadeIn>
                 <div className="pas-card">
                   <div className="card-img-container" style={{ marginBottom: "1.5rem", borderRadius: "12px", overflow: "hidden", height: "200px" }}>
-                    <Image src="/img/hero-fungi.jpg" alt="Hongos" width={400} height={200} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    <Image src="/img/hongos-pilar.jpg" alt="Hongos" width={400} height={200} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                   </div>
                   <h4>Hongos</h4>
                   <p>Pilares del ciclo de nutrientes y la salud del suelo. Su presencia es un indicador crítico de la estabilidad en ecosistemas complejos.</p>
@@ -56,7 +56,7 @@ export default function Home() {
               <FadeIn>
                 <div className="pas-card">
                   <div className="card-img-container" style={{ marginBottom: "1.5rem", borderRadius: "12px", overflow: "hidden", height: "200px" }}>
-                    <Image src="/img/monitoreo.jpg" alt="Líquenes" width={400} height={200} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    <Image src="/img/liquenes-pilar.jpg" alt="Líquenes" width={400} height={200} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                   </div>
                   <h4>Líquenes</h4>
                   <p>Son organismos simbióticos que funcionan como bioindicadores excepcionales de la calidad del aire y la continuidad del hábitat.</p>
@@ -65,7 +65,7 @@ export default function Home() {
               <FadeIn>
                 <div className="pas-card">
                   <div className="card-img-container" style={{ marginBottom: "1.5rem", borderRadius: "12px", overflow: "hidden", height: "200px" }}>
-                    <Image src="/img/esporas.jpg" alt="Briófitas" width={400} height={200} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    <Image src="/img/briofitas-pilar.jpg" alt="Briófitas" width={400} height={200} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                   </div>
                   <h4>Briófitas</h4>
                   <p>Este grupo, que incluye musgos y hepáticas, es vital para la regulación hídrica y la protección del suelo contra la erosión.</p>
@@ -147,7 +147,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="services-category" style={{ marginTop: "4rem" }}>
+            <div id="micorrizas" className="services-category" style={{ marginTop: "4rem" }}>
               <h3 className="category-title">2. Análisis de micorrizas</h3>
               <div className="bento-grid">
                 <FadeIn className="bento-card">
