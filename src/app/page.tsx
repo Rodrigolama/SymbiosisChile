@@ -36,47 +36,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── PILARES SECTION ── */}
-        <section id="pilares" className="pas-section" aria-labelledby="pilares-title">
-          <div className="container">
-            <span className="section-label">Nuestra especialidad, nuestra prioridad</span>
-            <h2 id="pilares-title" className="section-title text-balance">
-              Protegiendo los pilares de la integridad ecosistémica: hongos, líquenes y briófitas.
-            </h2>
-            <div className="pas-grid">
-              <FadeIn>
-                <div className="pas-card">
-                  <div className="card-img-container" style={{ marginBottom: "1.5rem", borderRadius: "12px", overflow: "hidden", height: "200px" }}>
-                    <Image src="/img/hongos-pilar.jpg" alt="Hongos" width={400} height={200} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                  </div>
-                  <h4>Hongos</h4>
-                  <p>Pilares del ciclo de nutrientes y la salud del suelo. Su presencia es un indicador crítico de la estabilidad en ecosistemas complejos.</p>
-                </div>
-              </FadeIn>
-              <FadeIn>
-                <div className="pas-card">
-                  <div className="card-img-container" style={{ marginBottom: "1.5rem", borderRadius: "12px", overflow: "hidden", height: "200px" }}>
-                    <Image src="/img/liquenes-pilar.jpg" alt="Líquenes" width={400} height={200} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                  </div>
-                  <h4>Líquenes</h4>
-                  <p>Son organismos simbióticos que funcionan como bioindicadores excepcionales de la calidad del aire y la continuidad del hábitat.</p>
-                </div>
-              </FadeIn>
-              <FadeIn>
-                <div className="pas-card">
-                  <div className="card-img-container" style={{ marginBottom: "1.5rem", borderRadius: "12px", overflow: "hidden", height: "200px" }}>
-                    <Image src="/img/briofitas-pilar.jpg" alt="Briófitas" width={400} height={200} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                  </div>
-                  <h4>Briófitas</h4>
-                  <p>Este grupo, que incluye musgos y hepáticas, es vital para la regulación hídrica y la protección del suelo contra la erosión.</p>
-                </div>
-              </FadeIn>
-            </div>
-          </div>
-        </section>
-
-        {/* ── PAS SECTION ── */}
-        <section id="compromiso" className="pas-section bg-light" aria-labelledby="pas-title">
+        {/* ── PAS SECTION — directly after hero for max emotional impact ── */}
+        <section id="compromiso" className="pas-section bg-alt" aria-labelledby="pas-title">
           <div className="container">
             <span className="section-label">Rigurosidad y respaldo en cada Proyecto</span>
             <h2 id="pas-title" className="section-title text-balance">
@@ -114,12 +75,51 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── SERVICES BENTO ── */}
+        {/* ── PILARES SECTION ── */}
+        <section id="pilares" className="pas-section" aria-labelledby="pilares-title">
+          <div className="container">
+            <span className="section-label">Nuestra especialidad, nuestra prioridad</span>
+            <h2 id="pilares-title" className="section-title">
+              Los tres pilares de la resiliencia ambiental.
+            </h2>
+            <div className="pas-grid">
+              <FadeIn>
+                <div className="pas-card">
+                  <div className="card-img-container" style={{ marginBottom: "1.5rem", borderRadius: "12px", overflow: "hidden", height: "200px" }}>
+                    <Image src="/img/hongos-pilar.jpg" alt="Hongos" width={400} height={200} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  </div>
+                  <h4>Hongos</h4>
+                  <p>Pilares del ciclo de nutrientes y la salud del suelo. Su presencia es un indicador crítico de la estabilidad en ecosistemas complejos.</p>
+                </div>
+              </FadeIn>
+              <FadeIn>
+                <div className="pas-card">
+                  <div className="card-img-container" style={{ marginBottom: "1.5rem", borderRadius: "12px", overflow: "hidden", height: "200px" }}>
+                    <Image src="/img/liquenes-pilar.jpg" alt="Líquenes" width={400} height={200} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  </div>
+                  <h4>Líquenes</h4>
+                  <p>Son organismos simbióticos que funcionan como bioindicadores excepcionales de la calidad del aire y la continuidad del hábitat.</p>
+                </div>
+              </FadeIn>
+              <FadeIn>
+                <div className="pas-card">
+                  <div className="card-img-container" style={{ marginBottom: "1.5rem", borderRadius: "12px", overflow: "hidden", height: "200px" }}>
+                    <Image src="/img/briofitas-pilar.jpg" alt="Briófitas" width={400} height={200} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  </div>
+                  <h4>Briófitas</h4>
+                  <p>Este grupo, que incluye musgos y hepáticas, es vital para la regulación hídrica y la protección del suelo contra la erosión.</p>
+                </div>
+              </FadeIn>
+            </div>
+          </div>
+        </section>
+
+        {/* ── CONSULTORÍA AMBIENTAL BENTO ── */}
         <section id="servicios" className="services-section" aria-labelledby="services-title">
           <div className="container">
-            <span className="section-label">Nuestros Servicios</span>
-            <h2 id="services-title" className="section-title">Consultoría Ambiental &amp; Análisis de Micorrizas</h2>
-            <p className="section-desc">Soluciones integrales respaldadas por ciencia de vanguardia y un compromiso absoluto con la sostenibilidad.</p>
+            <span className="section-label">Consultoría Ambiental</span>
+            <h2 id="services-title" className="section-title">Estudio, identificación e informes para el SEIA</h2>
+            <p className="section-desc">Respaldamos proyectos con ciencia de vanguardia y un compromiso absoluto con la sostenibilidad.</p>
 
             <div className="bento-grid">
               <FadeIn className="bento-card span-2 has-img">
@@ -148,8 +148,19 @@ export default function Home() {
                 <h4>Elaboración de informes</h4>
                 <p>Informes técnicos alineados con el SEIA, respaldados por evidencia científica rigurosa.</p>
               </FadeIn>
+            </div>
+          </div>
+        </section>
 
-              <FadeIn className="bento-card" id="micorrizas">
+        {/* ── ANÁLISIS DE MICORRIZAS — dedicated section ── */}
+        <section id="micorrizas" className="micorrizas-section" aria-labelledby="micorrizas-title">
+          <div className="container">
+            <span className="section-label">Análisis de Micorrizas</span>
+            <h2 id="micorrizas-title" className="section-title">La simbiosis que sostiene la vida del suelo</h2>
+            <p className="section-desc">Servicios especializados en hongos micorrícicos arbusculares (HMA) para evaluar, restaurar y potenciar la salud radicular y edáfica.</p>
+
+            <div className="bento-grid">
+              <FadeIn className="bento-card">
                 <div className="card-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
                 </div>

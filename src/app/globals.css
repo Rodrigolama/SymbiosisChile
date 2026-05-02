@@ -85,6 +85,7 @@ h6{font-size:var(--fs-md)}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
 .text-center{text-align:center}
 .text-balance{text-wrap:balance}
+.bg-alt{background:var(--c-bg-alt) !important;}
 
 /* ---------- BUTTONS ---------- */
 .btn{
@@ -333,6 +334,18 @@ h6{font-size:var(--fs-md)}
   background:url('/img/bracket.jpg') center/cover no-repeat;
   opacity:0.15;
 }
+/* Equal-height cards — stretch FadeIn wrappers so grid row determines height */
+.how-section .pas-grid{
+  align-items:stretch;
+}
+.how-section .pas-grid .fade-in{
+  height:100%;
+}
+.how-section .pas-card{
+  height:100%;
+  display:flex;flex-direction:column;
+}
+.how-section .pas-card p{flex:1}
 
 /* ---------- SERVICES BENTO GRID ---------- */
 .services-section{
@@ -392,6 +405,37 @@ h6{font-size:var(--fs-md)}
 }
 .bento-card.has-img .bento-body{padding:var(--sp-3)}
 .bento-card.has-img .bento-body .card-icon{margin-bottom:var(--sp-1)}
+
+/* ---------- ANÁLISIS DE MICORRIZAS — Dedicated Section ---------- */
+.micorrizas-section{
+  padding:var(--sec-primary) 0;
+  position:relative;overflow:hidden;
+  background:#FFFCF2;
+}
+.micorrizas-section::before{
+  content:'';position:absolute;inset:0;z-index:0;
+  background:url('/img/esporas.jpg') center/cover no-repeat;
+  opacity:0.06;
+  mix-blend-mode:luminosity;
+}
+.micorrizas-section>.container{position:relative;z-index:1}
+.micorrizas-section .section-label{color:var(--c-accent)}
+.micorrizas-section .section-title{color:var(--c-dark);font-size:clamp(1.3rem,2.4vw,var(--fs-2xl))}
+.micorrizas-section .section-desc{color:var(--c-text-light);max-width:var(--content-w);margin-bottom:var(--sec-secondary)}
+/* Override bento card colours inside micorrizas to light theme */
+.micorrizas-section .bento-card{
+  background:var(--c-white);
+  border:1px solid rgba(124,92,184,0.15);
+}
+.micorrizas-section .bento-card:hover{
+  background:#F5F0FB;
+  border-color:var(--c-accent);
+}
+.micorrizas-section .bento-card .card-icon{
+  background:rgba(124,92,184,0.1);
+}
+.micorrizas-section .bento-card h4{color:var(--c-dark)}
+.micorrizas-section .bento-card p{color:var(--c-text-light)}
 
 /* ---------- CLIENT LOGOS — Marquee ---------- */
 .clients-section{
