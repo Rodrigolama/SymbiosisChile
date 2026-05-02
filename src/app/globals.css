@@ -218,7 +218,7 @@ h6{font-size:var(--fs-md)}
 }
 .hero-content{
   position:relative;z-index:2;
-  max-width:800px;
+  max-width:1200px;
   padding:var(--sp-6) var(--sp-3);
 }
 .hero-title{

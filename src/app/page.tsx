@@ -23,8 +23,8 @@ export default function Home() {
             />
           </div>
           <div className="hero-content">
-            <h1 id="hero-title" className="hero-title">
-              Ciencia dedicada a los protagonistas invisibles de la resiliencia ambiental
+            <h1 id="hero-title" className="hero-title text-balance">
+              Ciencia dedicada a los protagonistas invisibles<br className="hidden md:block"/> de la resiliencia ambiental
             </h1>
             <p className="hero-subtitle">
               Somos especialistas en Hongos, Líquenes y Briófitas.
