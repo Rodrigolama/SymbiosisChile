@@ -114,64 +114,109 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── SERVICES SECTION ── */}
+        {/* ── SERVICES BENTO ── */}
         <section id="servicios" className="services-section" aria-labelledby="services-title">
           <div className="container">
             <span className="section-label">Nuestros Servicios</span>
-            <h2 id="services-title" className="section-title">Soluciones Especializadas</h2>
-            
-            <div className="services-category">
-              <h3 className="category-title">1. Consultoría Ambiental</h3>
-              <div className="bento-grid">
-                <FadeIn className="bento-card">
+            <h2 id="services-title" className="section-title">Consultoría Ambiental &amp; Análisis de Micorrizas</h2>
+            <p className="section-desc">Soluciones integrales respaldadas por ciencia de vanguardia y un compromiso absoluto con la sostenibilidad.</p>
+
+            <div className="bento-grid">
+              <FadeIn className="bento-card span-2 has-img">
+                <Image className="bento-img" src="/img/monitoreo.jpg" alt="Microscopía de hifas y esporas AMF" width={800} height={300} loading="lazy" style={{ width: "100%", height: "180px", objectFit: "cover" }} />
+                <div className="bento-body">
                   <div className="card-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
                   </div>
                   <h4>Trabajo de terreno</h4>
                   <p>Realizamos muestreos rigurosos y georreferenciados para generar datos de campo precisos que permitan evaluar la biodiversidad de los ecosistemas en estudio.</p>
-                </FadeIn>
-                <FadeIn className="bento-card">
-                  <div className="card-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
-                  </div>
-                  <h4>Identificación taxonómica</h4>
-                  <p>Ejecutamos análisis de laboratorio con microscopía y tinciones específicas para asegurar la determinación exacta de especies.</p>
-                </FadeIn>
-                <FadeIn className="bento-card">
-                  <div className="card-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                  </div>
-                  <h4>Elaboración de informes</h4>
-                  <p>Elaboramos informes técnicos alineados con los estándares del SEIA, transformando la evidencia científica en documentos robustos.</p>
-                </FadeIn>
-              </div>
-            </div>
+                </div>
+              </FadeIn>
 
-            <div id="micorrizas" className="services-category" style={{ marginTop: "4rem" }}>
-              <h3 className="category-title">2. Análisis de micorrizas</h3>
-              <div className="bento-grid">
-                <FadeIn className="bento-card">
-                  <div className="card-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-                  </div>
-                  <h4>Colonización micorrícica</h4>
-                  <p>Determinamos el porcentaje de asociación fúngica en sistemas radiculares mediante protocolos de tinción específicos y microscopía de alta resolución.</p>
-                </FadeIn>
-                <FadeIn className="bento-card">
-                  <div className="card-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                  </div>
-                  <h4>Inoculación de sustratos</h4>
-                  <p>Implementamos el uso de hongos micorrícicos arbusculares (HMA) nativos para optimizar la salud y resiliencia del suelo.</p>
-                </FadeIn>
-                <FadeIn className="bento-card">
+              <FadeIn className="bento-card">
+                <div className="card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                </div>
+                <h4>Identificación taxonómica</h4>
+                <p>Ejecutamos análisis de laboratorio con microscopía y tinciones específicas para asegurar la determinación exacta de especies.</p>
+              </FadeIn>
+
+              <FadeIn className="bento-card">
+                <div className="card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h4>Elaboración de informes</h4>
+                <p>Elaboramos informes técnicos alineados con los estándares del SEIA, transformando la evidencia científica en documentos robustos.</p>
+              </FadeIn>
+
+              <FadeIn className="bento-card" id="micorrizas">
+                <div className="card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                </div>
+                <h4>Colonización micorrícica</h4>
+                <p>Determinamos el porcentaje de asociación fúngica en sistemas radiculares mediante protocolos de tinción específicos y microscopía de alta resolución.</p>
+              </FadeIn>
+
+              <FadeIn className="bento-card">
+                <div className="card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <h4>Inoculación de sustratos</h4>
+                <p>Implementamos el uso de hongos micorrícicos arbusculares (HMA) nativos para optimizar la salud y resiliencia del suelo.</p>
+              </FadeIn>
+
+              <FadeIn className="bento-card span-2 has-img">
+                <Image className="bento-img" src="/img/esporas.jpg" alt="Esporas de hongos micorrícicos bajo microscopio" width={800} height={300} loading="lazy" style={{ width: "100%", height: "180px", objectFit: "cover" }} />
+                <div className="bento-body">
                   <div className="card-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
                   </div>
                   <h4>Conteo de esporas de HMA</h4>
-                  <p>Realizamos la extracción y cuantificación de propágulos fúngicos en suelos naturales y agrícolas.</p>
-                </FadeIn>
-              </div>
+                  <p>Extracción y cuantificación de esporas en suelos naturales y agrícolas para evaluar diversidad fúngica, actividad biológica y salud del suelo.</p>
+                </div>
+              </FadeIn>
+            </div>
+          </div>
+        </section>
+
+        {/* ── HOW WE WORK ── */}
+        <section id="metodo" className="pas-section how-section" aria-labelledby="how-title">
+          <div className="container">
+            <span className="section-label">Cómo Trabajamos</span>
+            <h2 id="how-title" className="section-title text-balance">
+              Un proceso científico de 3 etapas.
+            </h2>
+            <div className="pas-grid">
+              <FadeIn>
+                <div className="pas-card">
+                  <div className="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  </div>
+                  <span className="step-number">01</span>
+                  <h4>Prospección en Terreno</h4>
+                  <p>Muestreo georreferenciado de hongos, líquenes y briófitas con protocolos estandarizados y trazabilidad de campo.</p>
+                </div>
+              </FadeIn>
+              <FadeIn>
+                <div className="pas-card">
+                  <div className="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  </div>
+                  <span className="step-number">02</span>
+                  <h4>Análisis de Laboratorio</h4>
+                  <p>Microscopía avanzada y tinciones especializadas para identificación taxonómica precisa y cuantificación de propágulos fúngicos.</p>
+                </div>
+              </FadeIn>
+              <FadeIn>
+                <div className="pas-card">
+                  <div className="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  </div>
+                  <span className="step-number">03</span>
+                  <h4>Informe &amp; Cumplimiento</h4>
+                  <p>Informes técnicos con respaldo científico, listos para el SEIA, que aceleran la aprobación de tu proyecto.</p>
+                </div>
+              </FadeIn>
             </div>
           </div>
         </section>
