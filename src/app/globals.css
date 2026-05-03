@@ -357,7 +357,8 @@ h6{font-size:var(--fs-md)}
 }
 .services-section::before{
   content:'';position:absolute;inset:0;z-index:0;
-  opacity:0.2;
+  background:url('/img/chanterelle.jpg') center/cover no-repeat;
+  opacity:0.12;
   mix-blend-mode:luminosity;
 }
 .services-section>.container{position:relative;z-index:1}
@@ -438,8 +439,6 @@ h6{font-size:var(--fs-md)}
 .clients-section{
   padding:var(--sec-secondary) 0;margin-top:var(--sec-accent);
   background:var(--c-bg);
-  border-top:1px solid rgba(45,27,78,0.06);
-  border-bottom:1px solid rgba(45,27,78,0.06);
   overflow:hidden;
 }
 .clients-section .section-label{
