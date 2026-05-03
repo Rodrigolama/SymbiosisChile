@@ -282,12 +282,7 @@ h6{font-size:var(--fs-md)}
   padding:var(--sec-secondary) 0;
   position:relative;overflow:hidden;
 }
-.pas-section::before{
-  content:'';position:absolute;inset:0;z-index:0;
-  background:url('/img/chanterelle.jpg') center/cover no-repeat;
-  opacity:0.15;
-  mix-blend-mode:luminosity;
-}
+
 .pas-section>.container{position:relative;z-index:1}
 .section-label{
   font-size:var(--fs-sm);font-weight:600;text-transform:uppercase;letter-spacing:0.08em;
@@ -330,10 +325,7 @@ h6{font-size:var(--fs-md)}
 .how-section{
   background:var(--c-bg-alt);
 }
-.how-section::before{
-  background:url('/img/bracket.jpg') center/cover no-repeat;
-  opacity:0.15;
-}
+
 /* Equal-height cards — stretch FadeIn wrappers so grid row determines height */
 .how-section .pas-grid{
   align-items:stretch;
@@ -415,12 +407,7 @@ h6{font-size:var(--fs-md)}
   position:relative;overflow:hidden;
   background:#FFFCF2;
 }
-.micorrizas-section::before{
-  content:'';position:absolute;inset:0;z-index:0;
-  background:url('/img/esporas.jpg') center/cover no-repeat;
-  opacity:0.06;
-  mix-blend-mode:luminosity;
-}
+
 .micorrizas-section>.container{position:relative;z-index:1}
 .micorrizas-section .section-label{color:var(--c-accent)}
 .micorrizas-section .section-title{color:var(--c-dark);font-size:clamp(1.3rem,2.4vw,var(--fs-2xl))}
@@ -490,12 +477,7 @@ h6{font-size:var(--fs-md)}
   position:relative;overflow:hidden;
   background:var(--c-bg-alt);
 }
-.contact-section::before{
-  content:'';position:absolute;inset:0;z-index:0;
-  background:url('/img/amanita.jpg') center/cover no-repeat;
-  opacity:0.15;
-  mix-blend-mode:luminosity;
-}
+
 .contact-section>.container{position:relative;z-index:1}
 .contact-section .section-title{text-align:center;font-size:clamp(1.4rem,2.5vw,var(--fs-2xl))}
 .contact-subtitle{color:var(--c-text-light);text-align:center;margin-bottom:var(--sp-4)}
