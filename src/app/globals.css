@@ -324,6 +324,13 @@ h6{font-size:var(--fs-md)}
 /* ---------- HOW WE WORK ---------- */
 .how-section{
   background:var(--c-bg-alt);
+  position:relative;overflow:hidden;
+}
+.how-section::before{
+  content:'';position:absolute;inset:0;z-index:0;
+  background:url('/img/bracket.jpg') center/cover no-repeat;
+  opacity:0.15;
+  mix-blend-mode:luminosity;
 }
 
 /* Equal-height cards — stretch FadeIn wrappers so grid row determines height */
@@ -476,6 +483,12 @@ h6{font-size:var(--fs-md)}
   padding:var(--sec-primary) 0;
   position:relative;overflow:hidden;
   background:var(--c-bg-alt);
+}
+.contact-section::before{
+  content:'';position:absolute;inset:0;z-index:0;
+  background:url('/img/amanita.jpg') center/cover no-repeat;
+  opacity:0.15;
+  mix-blend-mode:luminosity;
 }
 
 .contact-section>.container{position:relative;z-index:1}
