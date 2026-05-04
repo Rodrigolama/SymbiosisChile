@@ -38,7 +38,7 @@ export default function Header() {
       <header className="site-header" role="banner">
         <div className="container">
           <a href="/" className="site-logo" aria-label="Symbiosis Chile">
-            <img src="/img/logohf.png" alt="Symbiosis Chile" className="header-logo-img" />
+            Symbiosis<span style={{ color: "var(--c-accent)" }}>.</span>
           </a>
 
           <nav id="primary-nav" aria-label="Primary navigation">

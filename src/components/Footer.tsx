@@ -4,9 +4,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <a href="/" aria-label="Symbiosis Chile">
-              <img src="/img/logohf.png" alt="Symbiosis Chile" className="footer-logo-img" />
-            </a>
+            <div className="site-logo">Symbiosis<span style={{ color: "var(--c-accent)" }}>.</span></div>
             <p>Donde el rigor científico protege a los organismos más específicos. Especialistas en Hongos, Líquenes y Briófitas.</p>
           </div>
           <div className="footer-col">
