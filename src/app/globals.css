@@ -148,6 +148,7 @@ h6{font-size:var(--fs-md)}
 .header-logo-img{
   height:36px;width:auto;object-fit:contain;
   display:block;
+  mix-blend-mode:multiply;
 }
 .nav-list{display:flex;gap:var(--sp-4);list-style:none}
 .nav-list a{
@@ -672,6 +673,7 @@ h6{font-size:var(--fs-md)}
   height:40px;width:auto;object-fit:contain;
   margin-bottom:var(--sp-2);
   filter:brightness(0) invert(1);
+  mix-blend-mode:screen;
 }
 .footer-brand p{max-width:320px;line-height:1.618}
 .footer-col h5{color:var(--c-white);font-size:var(--fs-base);margin-bottom:var(--sp-2)}
