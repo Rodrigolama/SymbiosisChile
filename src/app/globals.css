@@ -634,8 +634,8 @@ h6{font-size:var(--fs-md)}
   display:flex;flex-direction:column;align-items:center;gap:var(--sp-5);
 }
 .brand-close__circle{
-  width:clamp(180px,22vw,280px);
-  height:clamp(180px,22vw,280px);
+  width:clamp(180px,22vw,260px);
+  height:clamp(180px,22vw,260px);
   border-radius:50%;
   background:var(--c-bg-alt);
   display:flex;align-items:center;justify-content:center;
@@ -646,9 +646,12 @@ h6{font-size:var(--fs-md)}
   transform:scale(1.04);
   box-shadow:0 12px 56px rgba(124,92,184,0.28);
 }
-.brand-close__logo{
-  width:60%;height:60%;object-fit:contain;
+.brand-close__wordmark{
+  font-size:clamp(1.4rem,3.5vw,2.2rem);
+  font-weight:800;letter-spacing:-0.03em;
+  color:var(--c-dark);
 }
+.brand-close__dot{color:var(--c-accent)}
 .brand-close__tagline{
   font-size:clamp(1rem,2vw,var(--fs-xl));
   font-weight:300;letter-spacing:-0.01em;

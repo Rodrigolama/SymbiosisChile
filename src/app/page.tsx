@@ -285,7 +285,9 @@ export default function Home() {
       <section className="brand-close" aria-label="Cierre de marca">
         <FadeIn>
           <div className="brand-close__circle">
-            <img src="/img/logo.png" alt="Symbiosis Chile" className="brand-close__logo" />
+            <span className="brand-close__wordmark">
+              Symbiosis<span className="brand-close__dot">.</span>
+            </span>
           </div>
           <p className="brand-close__tagline">
             Donde el rigor científico protege a los organismos más específicos.
