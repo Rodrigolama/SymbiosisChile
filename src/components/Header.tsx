@@ -38,7 +38,7 @@ export default function Header() {
       <header className="site-header" role="banner">
         <div className="container">
           <a href="/" className="site-logo" aria-label="Symbiosis Chile">
-            Symbiosis.
+            <img src="/img/logohf.png" alt="Symbiosis Chile" className="header-logo-img" />
           </a>
 
           <nav id="primary-nav" aria-label="Primary navigation">
