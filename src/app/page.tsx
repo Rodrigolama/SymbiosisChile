@@ -281,6 +281,18 @@ export default function Home() {
         </section>
       </main>
 
+      {/* ── CLOSING BRAND SECTION (PPT slide) ── */}
+      <section className="brand-close" aria-label="Cierre de marca">
+        <FadeIn>
+          <div className="brand-close__circle">
+            <img src="/img/logo.png" alt="Symbiosis Chile" className="brand-close__logo" />
+          </div>
+          <p className="brand-close__tagline">
+            Donde el rigor científico protege a los organismos más específicos.
+          </p>
+        </FadeIn>
+      </section>
+
       <Footer />
     </>
   );
