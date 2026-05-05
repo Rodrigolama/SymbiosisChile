@@ -628,38 +628,7 @@ h6{font-size:var(--fs-md)}
   .contact-info{flex-direction:column;gap:var(--sp-2)}
 }
 
-/* ---------- CLOSING BRAND SECTION ---------- */
-.brand-close{
-  background:var(--c-bg);
-  padding:var(--sec-primary) var(--sp-3);
-  display:flex;align-items:center;justify-content:center;
-  text-align:center;
-}
-.brand-close .fade-in{
-  display:flex;flex-direction:column;align-items:center;gap:var(--sp-5);
-}
-.brand-close__circle{
-  width:clamp(180px,22vw,260px);
-  height:clamp(180px,22vw,260px);
-  border-radius:50%;
-  background:#ffffff;
-  display:flex;align-items:center;justify-content:center;
-  box-shadow:0 8px 40px rgba(124,92,184,0.15);
-  transition:transform 0.4s ease,box-shadow 0.4s ease;
-}
-.brand-close__circle:hover{
-  transform:scale(1.04);
-  box-shadow:0 12px 56px rgba(124,92,184,0.28);
-}
-.brand-close__logo{
-  width:75%;height:75%;object-fit:contain;
-}
-.brand-close__tagline{
-  font-size:clamp(1rem,2vw,var(--fs-xl));
-  font-weight:300;letter-spacing:-0.01em;
-  color:var(--c-dark);
-  max-width:640px;line-height:1.5;
-}
+/* ---------- FOOTER ---------- */
 
 /* ---------- FOOTER ---------- */
 .site-footer{
