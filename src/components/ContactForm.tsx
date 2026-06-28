@@ -63,7 +63,7 @@ export default function ContactForm() {
         // Google Ads conversion tracking
         if (typeof window.gtag === 'function') {
           window.gtag('event', 'conversion', {
-            'send_to': 'AW-18008420048/bUcgCJquzYYcENDdiotD',
+            'send_to': 'AW-18008420048/GZUKCMqlrMccENDdiotD',
             'value': 1.0,
             'currency': 'CLP'
           });

@@ -1,6 +1,26 @@
 "use client";
 
 export default function WhatsAppButton() {
+  function handleClick() {
+    // GA4 event tracking
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'whatsapp_click',
+      event_category: 'contact',
+      event_label: 'WhatsApp Button',
+      value: 1,
+    });
+
+    // Google Ads conversion tracking
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-18008420048/whatsapp_conversion', // reemplaza con tu etiqueta de conversión de WhatsApp si es diferente
+        'value': 1.0,
+        'currency': 'CLP',
+      });
+    }
+  }
+
   return (
     <a
       href="https://wa.me/56962070062?text=Hola+Symbiosis,+necesito+información+sobre+servicios+ambientales"
@@ -8,6 +28,7 @@ export default function WhatsAppButton() {
       rel="noopener noreferrer"
       className="whatsapp-fab"
       aria-label="Contáctanos por WhatsApp"
+      onClick={handleClick}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
