@@ -9,13 +9,9 @@ The first technical SEO release is live. The contact-delivery correction and per
 - Public authoritative nameservers are `ns-cloud-a1.googledomains.com` through `ns-cloud-a4.googledomains.com`. If a DNS change becomes necessary later, the actual DNS records must be changed in the account/project managing that Google Cloud DNS zone. The domain registrar account may be managed through Squarespace if it was migrated from Google Domains. Do not change nameservers or mail records for the current fix.
 - The contact API now reports success only after Resend accepts the message. Provider acceptance still will not prove that the message reached the inbox, so one coordinated inbox test remains.
 
-## Step 1 — submit the sitemap in Search Console
+## Step 1 — submit the sitemap in Search Console — complete
 
-1. Open [Google Search Console](https://search.google.com/search-console) and choose the existing `symbiosischile.com` Domain property.
-2. Open **Sitemaps** from the left menu.
-3. In **Add a new sitemap**, enter `https://symbiosischile.com/sitemap.xml` and select **Submit**.
-4. If Search Console shows that the property is missing or you do not have access, stop there and tell the project owner which message it shows. Do not create a duplicate property.
-5. Send back either “submitted” or “no access,” plus any error message. No export or screenshot is needed unless the page reports an error.
+The owner submitted `https://symbiosischile.com/sitemap.xml`. Search Console showed **Correcto**, a last-read date of 22 Sep 2026, and one discovered page. That matches the current sitemap, which contains the homepage. No further sitemap action is needed now; Google may take time to crawl and decide whether to index the page.
 
 ## Step 2 — coordinate one real enquiry test
 
