@@ -4,6 +4,16 @@ import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
 import FadeIn from "@/components/FadeIn";
 
+const clientLogos = [
+  "/img/client-logo.png",
+  "/img/client-logo (1).png",
+  "/img/client-logo (2).png",
+  "/img/client-logo (3).png",
+  "/img/client-logo (4).png",
+  "/img/client-logo (5).png",
+  "/img/client-logo (6).png",
+];
+
 export default function Home() {
   return (
     <>
@@ -24,7 +34,7 @@ export default function Home() {
           </div>
           <div className="hero-content">
             <h1 id="hero-title" className="hero-title text-balance">
-              Ciencia dedicada a los protagonistas invisibles<br className="hidden md:block"/> de la resiliencia ambiental
+              Consultoría ambiental en hongos, líquenes y briófitas<br className="hidden md:block"/> para proyectos en Chile
             </h1>
             <p className="hero-subtitle">
               Somos especialistas en Hongos, Líquenes y Briófitas.
@@ -68,7 +78,7 @@ export default function Home() {
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                   </div>
                   <h4>Nuestra solución</h4>
-                  <p>Ciencia rigurosa y caracterización taxonómica de alta precisión. Entregamos resultados robustos que garantizan el cumplimiento normativo y promueven la sostenibilidad de cada operación.</p>
+                  <p>Ciencia rigurosa y caracterización taxonómica de alta precisión. Entregamos resultados técnicos que apoyan el cumplimiento normativo y la sostenibilidad de cada operación.</p>
                 </div>
               </FadeIn>
             </div>
@@ -225,7 +235,7 @@ export default function Home() {
                   </div>
                   <span className="step-number">03</span>
                   <h4>Informe &amp; Cumplimiento</h4>
-                  <p>Documentación técnica lista para el SEIA que acelera la aprobación de tu proyecto.</p>
+                  <p>Documentación técnica preparada para apoyar la evaluación ambiental y las decisiones de tu proyecto.</p>
                 </div>
               </FadeIn>
             </div>
@@ -237,20 +247,18 @@ export default function Home() {
           <div className="container">
             <span className="section-label">Confían en Nosotros</span>
             <div className="clients-grid">
-              <img src="/img/client-logo.png" alt="Cliente 1" className="client-logo" />
-              <img src="/img/client-logo (1).png" alt="Cliente 2" className="client-logo" />
-              <img src="/img/client-logo (2).png" alt="Cliente 3" className="client-logo" />
-              <img src="/img/client-logo (3).png" alt="Cliente 4" className="client-logo" />
-              <img src="/img/client-logo (4).png" alt="Cliente 5" className="client-logo" />
-              <img src="/img/client-logo (5).png" alt="Cliente 6" className="client-logo" />
-              <img src="/img/client-logo (6).png" alt="Cliente 7" className="client-logo" />
-              <img src="/img/client-logo.png" alt="Cliente 1" className="client-logo" />
-              <img src="/img/client-logo (1).png" alt="Cliente 2" className="client-logo" />
-              <img src="/img/client-logo (2).png" alt="Cliente 3" className="client-logo" />
-              <img src="/img/client-logo (3).png" alt="Cliente 4" className="client-logo" />
-              <img src="/img/client-logo (4).png" alt="Cliente 5" className="client-logo" />
-              <img src="/img/client-logo (5).png" alt="Cliente 6" className="client-logo" />
-              <img src="/img/client-logo (6).png" alt="Cliente 7" className="client-logo" />
+              {[...clientLogos, ...clientLogos].map((src, index) => (
+                <Image
+                  key={`${src}-${index}`}
+                  src={src}
+                  alt=""
+                  aria-hidden="true"
+                  className="client-logo"
+                  width={140}
+                  height={48}
+                  sizes="140px"
+                />
+              ))}
             </div>
           </div>
         </section>
@@ -285,7 +293,7 @@ export default function Home() {
       <section className="brand-close" aria-label="Cierre de marca">
         <FadeIn>
           <div className="brand-close__circle">
-            <img src="/img/logofinal.png" alt="Symbiosis Chile" className="brand-close__logo" />
+            <Image src="/img/logofinal.png" alt="Symbiosis Chile" className="brand-close__logo" width={260} height={260} />
           </div>
           <p className="brand-close__tagline">
             Donde el rigor científico protege a los organismos más específicos.

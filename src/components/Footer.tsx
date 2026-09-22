@@ -20,7 +20,7 @@ export default function Footer() {
             <ul>
               <li>Caspana #710, Valdivia</li>
               <li><a href="mailto:monserrat.tome@symbiosischile.com">monserrat.tome@symbiosischile.com</a></li>
-              <li><a href="https://www.symbiosischile.com/" target="_blank" rel="noopener noreferrer">symbiosischile.com</a></li>
+              <li><a href="https://symbiosischile.com/">symbiosischile.com</a></li>
             </ul>
           </div>
         </div>

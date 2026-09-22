@@ -11,9 +11,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Symbiosis Chile — Consultoría e Investigación Ambiental",
+  metadataBase: new URL("https://symbiosischile.com"),
+  title: "Consultoría ambiental en hongos y líquenes | Symbiosis Chile",
   description:
-    "Especialistas en investigación y gestión ambiental de Hongos, Líquenes y Briófitas. Cumplimiento SEIA garantizado.",
+    "Estudios ambientales de hongos, líquenes y briófitas en Chile: muestreo, identificación taxonómica e informes técnicos para proyectos.",
   keywords: [
     "consultoría ambiental",
     "hongos chile",
@@ -23,22 +24,45 @@ export const metadata: Metadata = {
     "evaluación impacto ambiental",
     "micología",
     "sostenibilidad",
-    "economía circular",
-    "ley REP"
+    "micorrizas",
+    "estudios ambientales chile"
   ],
   authors: [{ name: "Monserrat Tomé" }],
+  creator: "Symbiosis Chile",
+  publisher: "Symbiosis Chile",
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
+  },
   openGraph: {
-    title: "Symbiosis Chile — Consultoría e Investigación Ambiental",
-    description: "Especialistas en investigación y gestión ambiental de Hongos, Líquenes y Briófitas. Cumplimiento SEIA garantizado.",
-    url: "https://symbiosischile.com",
+    title: "Consultoría ambiental en hongos y líquenes | Symbiosis Chile",
+    description: "Estudios ambientales de hongos, líquenes y briófitas en Chile: muestreo, identificación taxonómica e informes técnicos para proyectos.",
+    url: "https://symbiosischile.com/",
     siteName: "Symbiosis Chile",
     locale: "es_CL",
     type: "website",
+    images: [
+      {
+        url: "/img/hero-fungi.jpg",
+        width: 1920,
+        height: 1280,
+        alt: "Hongos en un entorno natural — Symbiosis Chile",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Symbiosis Chile — Consultoría Ambiental",
-    description: "Especialistas en investigación y gestión ambiental de Hongos, Líquenes y Briófitas",
+    title: "Consultoría ambiental en hongos y líquenes | Symbiosis Chile",
+    description: "Estudios ambientales de hongos, líquenes y briófitas en Chile.",
+    images: ["/img/hero-fungi.jpg"],
   },
   icons: {
     icon: "/icon.png",
@@ -52,9 +76,30 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Symbiosis Chile",
+    url: "https://symbiosischile.com/",
+    logo: "https://symbiosischile.com/img/logofinal.png",
+    email: "monserrat.tome@symbiosischile.com",
+    telephone: "+56 9 6207 0062",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Caspana #710",
+      addressLocality: "Valdivia",
+      addressCountry: "CL",
+    },
+  };
+
   return (
     <html lang="es">
-      <head></head>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body className={inter.className}>
         {/* Google Tag Manager - Body (noscript) */}
         <noscript
@@ -88,17 +133,6 @@ export default function RootLayout({
           gtag('config', 'G-2R5PYZSMDB');
         `}</Script>
 
-        {/* Hotjar - REEMPLAZA 1234567 CON TU SITE ID */}
-        <Script id="hotjar" strategy="afterInteractive">{`
-          (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:1234567,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-        `}</Script>
       </body>
     </html>
   );
