@@ -2,6 +2,14 @@
 
 Record each meaningful checkpoint with its date, objective, changes, verification, result, remaining work and commit. Keep personal lead data and secret values out of this file.
 
+## 2026-09-22 — Search Console sitemap acceptance
+
+- Objective: record the owner's Search Console submission result.
+- Evidence: owner-provided screenshot of the Sitemaps report showing `https://symbiosischile.com/sitemap.xml`, status `Correcto`, submitted and last-read 22 Sep 2026, and 1 discovered page.
+- Result: submission succeeded; the discovered count matches the current one-URL sitemap. No further sitemap action is needed now.
+- Remaining: coordinate one real inbox receipt test and collect verified business facts before service-page work.
+- Commit: pending.
+
 ## 2026-09-22 — Contact delivery truth and OKF project foundation
 
 - Objective: prevent false form success and make the Andes-aligned project rules durable in the Symbiosis repository.
