@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Header() {
   function handleSmoothScroll(
     e: React.MouseEvent<HTMLAnchorElement>,
@@ -37,13 +39,13 @@ export default function Header() {
       {/* HEADER */}
       <header className="site-header" role="banner">
         <div className="container">
-          <a href="/" className="site-logo" aria-label="Symbiosis Chile">
-            Symbiosis<span style={{ color: "var(--c-accent)" }}>.</span>
-          </a>
+            <Link href="/" className="site-logo" aria-label="Symbiosis Chile">
+              Symbiosis<span style={{ color: "var(--c-accent)" }}>.</span>
+            </Link>
 
           <nav id="primary-nav" aria-label="Primary navigation">
             <ul className="nav-list">
-              <li><a href="/" aria-current="page">Inicio</a></li>
+              <li><Link href="/" aria-current="page">Inicio</Link></li>
               <li><a href="#compromiso" onClick={(e) => handleSmoothScroll(e, "#compromiso")}>Nuestro Compromiso</a></li>
               <li><a href="#servicios" onClick={(e) => handleSmoothScroll(e, "#servicios")}>Consultoría Ambiental</a></li>
               <li><a href="#micorrizas" onClick={(e) => handleSmoothScroll(e, "#micorrizas")}>Análisis de Micorrizas</a></li>

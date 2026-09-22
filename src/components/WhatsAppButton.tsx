@@ -11,14 +11,6 @@ export default function WhatsAppButton() {
       value: 1,
     });
 
-    // Google Ads conversion tracking
-    if (typeof window.gtag === 'function') {
-      window.gtag('event', 'conversion', {
-        'send_to': 'AW-18008420048/whatsapp_conversion', // reemplaza con tu etiqueta de conversión de WhatsApp si es diferente
-        'value': 1.0,
-        'currency': 'CLP',
-      });
-    }
   }
 
   return (

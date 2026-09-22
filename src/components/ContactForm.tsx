@@ -58,7 +58,6 @@ export default function ContactForm() {
           form_id: 'contacto_principal',
           conversion_value: 50,
           service_selected: service,
-          user_email: email
         });
         // Google Ads conversion tracking
         if (typeof window.gtag === 'function') {
@@ -124,7 +123,8 @@ export default function ContactForm() {
         {!success && step === 2 && (
           <div className="form-step is-active">
             <h3 className="step-label">¿Cuál es el mayor desafío de tu proyecto?</h3>
-            <textarea name="challenge" rows={4} placeholder="Ej: Necesitamos cumplir con el SEIA antes de marzo..." className="form-textarea" value={challenge} onChange={(e) => setChallenge(e.target.value)} />
+            <label htmlFor="challenge" className="sr-only">Describe el desafío de tu proyecto</label>
+            <textarea id="challenge" name="challenge" rows={4} placeholder="Ej: Necesitamos cumplir con el SEIA antes de marzo..." className="form-textarea" value={challenge} onChange={(e) => setChallenge(e.target.value)} />
             <div className="step-actions">
               <button type="button" className="btn btn-outline" onClick={() => goToStep(1)}>Atrás</button>
               <button type="button" className="btn btn-primary" onClick={() => goToStep(3)}>Siguiente</button>
@@ -136,8 +136,10 @@ export default function ContactForm() {
         {!success && step === 3 && (
           <div className="form-step is-active">
             <h3 className="step-label">¿Cómo te contactamos?</h3>
-            <input type="text" name="name" placeholder="Tu nombre completo" className="form-input" value={name} onChange={(e) => setName(e.target.value)} required />
-            <input type="email" name="email" placeholder="Email profesional" className="form-input" value={email} onChange={(e) => setEmail(e.target.value)} required />
+            <label htmlFor="contact-name" className="sr-only">Tu nombre completo</label>
+            <input id="contact-name" type="text" name="name" placeholder="Tu nombre completo" autoComplete="name" className="form-input" value={name} onChange={(e) => setName(e.target.value)} required />
+            <label htmlFor="contact-email" className="sr-only">Email profesional</label>
+            <input id="contact-email" type="email" name="email" placeholder="Email profesional" autoComplete="email" className="form-input" value={email} onChange={(e) => setEmail(e.target.value)} required />
             <div className="step-actions">
               <button type="button" className="btn btn-outline" onClick={() => goToStep(2)}>Atrás</button>
               <button type="submit" className={`btn btn-primary btn-submit${loading ? " is-loading" : ""}`}>
