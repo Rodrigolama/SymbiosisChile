@@ -1,13 +1,13 @@
 # Symbiosis Chile — owner steps after the SEO release
 
-The first technical SEO release is live. The next code checkpoint is preparing a permanent `www` to apex redirect and making the contact endpoint report provider failures truthfully. Do not submit an enquiry until that contact update is deployed.
+The first technical SEO release is live. The contact-delivery correction and permanent `www` to apex redirect are deployed. The sitemap and robots file are live; a real inbox receipt test is still needed to verify the full mail path.
 
 ## What is already handled
 
 - The production sitemap, `robots.txt`, canonical and organization metadata were updated.
-- Public DNS for `www.symbiosischile.com` already points to Vercel (`CNAME cname.vercel-dns.com`). I added `www.symbiosischile.com` to the existing Vercel project; HTTPS now works. A redirect to the apex is being prepared so both hostnames do not serve duplicate pages.
+- Public DNS for `www.symbiosischile.com` already points to Vercel (`CNAME cname.vercel-dns.com`). I added `www.symbiosischile.com` to the existing Vercel project. Production now redirects `www` permanently to the canonical apex, preserving paths and query parameters.
 - Public authoritative nameservers are `ns-cloud-a1.googledomains.com` through `ns-cloud-a4.googledomains.com`. If a DNS change becomes necessary later, the actual DNS records must be changed in the account/project managing that Google Cloud DNS zone. The domain registrar account may be managed through Squarespace if it was migrated from Google Domains. Do not change nameservers or mail records for the current fix.
-- The current contact API can incorrectly display success when Resend is unconfigured or rejects a message. A code correction is in preparation; provider acceptance still will not prove that the message reached the inbox.
+- The contact API now reports success only after Resend accepts the message. Provider acceptance still will not prove that the message reached the inbox, so one coordinated inbox test remains.
 
 ## Step 1 — submit the sitemap in Search Console
 
@@ -17,9 +17,7 @@ The first technical SEO release is live. The next code checkpoint is preparing a
 4. If Search Console shows that the property is missing or you do not have access, stop there and tell the project owner which message it shows. Do not create a duplicate property.
 5. Send back either “submitted” or “no access,” plus any error message. No export or screenshot is needed unless the page reports an error.
 
-## Step 2 — coordinate one real enquiry test after the next deployment
-
-Wait until the agent confirms the contact reliability update is deployed. Then:
+## Step 2 — coordinate one real enquiry test
 
 1. Arrange a short test window with the person who watches `monserrat.tome@symbiosischile.com` (and the second configured recipient if that mailbox is still intended).
 2. Use an email address you control. Enter a name such as `QA PRUEBA — Symbiosis` and include `PRUEBA SEO [date/time]` in the challenge field.
@@ -27,7 +25,7 @@ Wait until the agent confirms the contact reliability update is deployed. Then:
 4. Check Inbox and Spam. Confirm whether exactly one message arrived, when it arrived, and which recipient received it. Do not paste the test email address or message contents into this task.
 5. If no email arrives, report “not received” and the approximate time. Do not submit repeated tests; the agent will inspect the provider status first.
 
-The agent can verify endpoint responses and event behavior. Only you or the mailbox monitor can confirm inbox receipt. Do not send a customer enquiry as a test.
+The agent verified malformed payload rejection in production. Only you or the mailbox monitor can confirm successful inbox receipt. Do not send a customer enquiry as a test.
 
 ## Step 3 — confirm the business facts before service-page work
 

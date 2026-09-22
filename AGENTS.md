@@ -8,7 +8,7 @@ These instructions apply to all work in this repository.
 - The Vercel production branch is `main`. Confirm the current deployment before attributing a live behavior to a local commit.
 - The active production app is a server-rendered Next.js deployment. It uses `/api/contact` and Vercel environment variables.
 - `migracion-siteground` is a preserved static/PHP alternative. Do not merge or deploy it as routine production work.
-- The canonical hostname is the HTTPS apex. The `www` certificate/DNS issue remains an owner/provider action until independently verified as repaired.
+- The canonical hostname is the HTTPS apex. `www.symbiosischile.com` is attached to Vercel and production has a permanent 308 redirect to the apex; recheck this if domain settings change.
 - The central OKF project record and SEO assessment are under `/Users/rodrigolama/dev/knowledge/projects/`; project-local decisions and development checkpoints belong in this repository too.
 
 ## Factual content and privacy
@@ -25,7 +25,7 @@ These instructions apply to all work in this repository.
 - Preserve the SiteGround branch and unrelated work. Never force-push, rewrite history, or discard user changes.
 - Keep each checkpoint focused and make a Conventional Commit after reviewing its diff and the proportional validation available.
 - Update `DEVLOG.md` in the same checkpoint with date, objective, changes, checks, result and remaining work.
-- Push only a feature branch for preview/review. Production changes go through the established Vercel Git workflow and an approved release.
+- Push only a feature branch for preview/review. Production changes go through the established Vercel Git workflow and an authorized release.
 
 ## SEO, accessibility and measurement
 
